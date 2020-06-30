@@ -7,6 +7,6 @@ To run this app follow these steps type and these commands.
 
 The application will automatically open in your default web browser at localhost:8080
 
-To run the tests manually simply type
+To run the tests manually simply type i.e after the npm install
 
 npm run test.
