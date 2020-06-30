@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                npm 'install'
+                sh 'npm install'
             }
         }
         stage('Unit Testing') {
             steps {
-                npm 'run test'
+                sh 'npm run test'
             }
         }
     }
