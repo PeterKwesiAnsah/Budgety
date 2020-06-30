@@ -9,4 +9,4 @@ The application will automatically open in your default web browser at localhost
 
 To run the tests manually simply type
 
-npm run test
+npm run test.
