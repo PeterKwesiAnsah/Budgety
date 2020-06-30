@@ -10,7 +10,7 @@ pipeline {
                 }
             }
         }
-git 
+
         stage ('Unit testing Stage') {
 
             steps {
