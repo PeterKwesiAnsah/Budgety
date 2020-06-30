@@ -1,24 +1,17 @@
 pipeline {
-    agent any
-
+    agent { docker { image 'node:6.3' } }
     stages {
-        stage ('Compile Stage') {
-
+        stage('build') {
             steps {
-                withMaven(maven : 'Maven_3.6.3') {
-                    sh 'mvn clean compile'
-                }
+                sh 'npm install'
             }
         }
-
-        stage ('Unit testing Stage') {
-
+    }
+      stages {
+        stage('Unit Testing') {
             steps {
-                withMaven(maven : 'Maven_3.6.3') {
-                    sh 'mvn test'
-                }
+                sh 'npm run test'
             }
         }
-
     }
 }
